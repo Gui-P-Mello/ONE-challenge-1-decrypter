@@ -5,15 +5,15 @@ const output = document.getElementById('output');
 function encrypt()
 {
         
-        const text = document.getElementById('texto').value;
+    const text = document.getElementById('texto').value;
 
-        const codeE = text.replaceAll("e", "enter");
-        const codeI = codeE.replaceAll("i", "imes");
-        const codeA = codeI.replaceAll("a", "aiai");
-        const codeO = codeA.replaceAll("o", "ober");
-        const codeU = codeO.replaceAll("u", "ufat");
+    const codeE = text.replaceAll("e", "enter");
+    const codeI = codeE.replaceAll("i", "imes");
+    const codeA = codeI.replaceAll("a", "aiai");
+    const codeO = codeA.replaceAll("o", "ober");
+    const codeU = codeO.replaceAll("u", "ufat");
         
-        output.value = codeU;
+    output.value = codeU;
 }
 
 function decrypt()
