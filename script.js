@@ -3,9 +3,9 @@ const decryptButton = document.querySelector("#decodificar");
 const output = document.getElementById('output');
 const copyButton = document.getElementById('copiar');
 
+
 function encrypt()
 {
-        
     const text = document.getElementById('texto').value;
 
     const codeE = text.replaceAll("e", "enter");
@@ -19,7 +19,7 @@ function encrypt()
 
 function decrypt()
 {
-    const encryptedText = document.getElementById('codigo').value;
+    const encryptedText = document.getElementById('texto').value;
 
     const codeEnter = encryptedText.replaceAll("enter", "e");
     const codeImes = codeEnter.replaceAll("imes", "i");
