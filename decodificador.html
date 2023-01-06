@@ -7,12 +7,57 @@
         <title>
             Decodificador
         </title>
-        <input class="codificado">
-        <input class="decodificado">
-        <p class="output"></p>
+
+        <textarea class="codificacao" id="texto" cols="30" rows="10"></textarea>
+        <button class="codificacao" id="codificar">codificar</button>
+
+        <textarea class="decodificacao" id="codigo" cols="30" rows="10"></textarea>
+        <button class="decodificacao" id="decodificar">decodificar</button>
+        
+        <textarea id="output" cols="30" rows="10"></textarea>
     </body>
 </html>
 
 <script>
+    const encryptButton = document.querySelector("#codificar");
+    const decryptButton = document.querySelector("#decodificar");
+    const output = document.getElementById('output');
 
+    function encrypt()
+    {
+        
+        const text = document.getElementById('texto').value;
+
+        const codeE = text.replaceAll("e", "enter");
+        const codeI = codeE.replaceAll("i", "imes");
+        const codeA = codeI.replaceAll("a", "aiai");
+        const codeO = codeA.replaceAll("o", "ober");
+        const codeU = codeO.replaceAll("u", "ufat");
+        
+        output.value = codeU;
+    }
+
+    function decrypt()
+    {
+        const encryptedText = document.getElementById('texto').value;
+
+        const codeEnter = encryptedText.replaceAll("enter", "e");
+        const codeImes = codeEnter.replaceAll("imes", "i");
+        const codeAiai = codeImes.replaceAll("aiai", "a");
+        const codeOber = codeAiai.replaceAll("ober", "o");
+        const codeUfat = codeOber.replaceAll("ufat", "u");
+
+        output.value = codeUfat;
+    }
+
+    /*function showText()
+    {
+        const output = document.getElementById('output');
+        output.value = 
+
+    }*/
+
+    encryptButton.onclick = encrypt;
+    decryptButton.onclick = decrypt;
+   
 </script>
