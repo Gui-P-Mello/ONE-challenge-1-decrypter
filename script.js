@@ -1,6 +1,7 @@
 const encryptButton = document.querySelector("#codificar");
 const decryptButton = document.querySelector("#decodificar");
 const output = document.getElementById('output');
+const copyButton = document.getElementById('copiar');
 
 function encrypt()
 {
@@ -18,7 +19,7 @@ function encrypt()
 
 function decrypt()
 {
-    const encryptedText = document.getElementById('texto').value;
+    const encryptedText = document.getElementById('codigo').value;
 
     const codeEnter = encryptedText.replaceAll("enter", "e");
     const codeImes = codeEnter.replaceAll("imes", "i");
@@ -29,12 +30,16 @@ function decrypt()
     output.value = codeUfat;
 }
 
-    /*function showText()
-    {
-        const output = document.getElementById('output');
-        output.value = 
+function copy()
+{
+    navigator.clipboard.writeText(output.value);
+}
 
+/*function showText()
+    {
+        
     }*/
 
 encryptButton.onclick = encrypt;
 decryptButton.onclick = decrypt;
+copyButton.onclick = copy;
