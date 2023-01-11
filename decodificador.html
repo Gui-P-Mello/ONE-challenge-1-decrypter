@@ -3,20 +3,34 @@
     <head>
         <meta lang = "UTF-8">
         <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <title>
             Decodificador
         </title>
 
-        <textarea class="codificacao" id="texto" cols="30" rows="10"></textarea>
-        <button class="codificacao" id="codificar">codificar</button>
+        <header>
+            <img src="source/logo.svg" alt="Logo da Alura">
+        </header>  
 
-        <!--<textarea class="decodificacao" id="codigo" cols="30" rows="10"></textarea>-->
-        <button class="decodificacao" id="decodificar">decodificar</button>
-        
-        <textarea id="output" cols="30" rows="10"></textarea>
-        <button id="copiar">Copiar</button>
+        <div class="input">
+              
+            <textarea class="codificacao" id="texto" cols="30" rows="10"></textarea>
+
+            <div class="warning" id="warningDiv">
+                <img src="source/warning.svg" alt="Ícone de Alerta" class ="warning" id="warningIcon">
+                <p class ="warning" id="warningText">Apenas letras minúsculas e sem acento.</p>
+            </div>
+            <button class="codificacao" id="encryptButton">criptografar</button>
+            <button class="decodificacao" id="decryptButton">descriptografar</button>
+        </div>
+
+        <div class = "output">
+            <textarea class="output" id="output" cols="30" rows="10"></textarea>
+            <button id="copyButton">Copiar</button>
+            <footer></footer>
+        </div>
     </body>
 </html>
 

@@ -1,7 +1,7 @@
-const encryptButton = document.querySelector("#codificar");
-const decryptButton = document.querySelector("#decodificar");
+const encryptButton = document.querySelector("#encryptButton");
+const decryptButton = document.querySelector("#decryptButton");
 const output = document.getElementById('output');
-const copyButton = document.getElementById('copiar');
+const copyButton = document.getElementById('copyButton');
 
 
 function encrypt()
