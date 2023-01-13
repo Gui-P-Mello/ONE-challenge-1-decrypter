@@ -14,12 +14,24 @@ textarea
     width: 100%;
     resize: none;
     box-sizing: border-box;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    color: #0A3871;
 }
 
 .output
 {
     float: right;
     margin: 1.5%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    color: #0A3871;
 }
 
 textarea
@@ -50,8 +62,7 @@ button
     line-height: 19px;
     flex: none;
     order: 0;
-    flex-grow: 0;
-    
+    flex-grow: 0;    
 }
 
 #encryptButton

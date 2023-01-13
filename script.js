@@ -14,7 +14,8 @@ function encrypt()
     const codeO = codeA.replaceAll("o", "ober");
     const codeU = codeO.replaceAll("u", "ufat");
         
-    output.value = codeU;
+    //output.value = codeU;
+    printOutput(codeU);
 }
 
 function decrypt()
@@ -27,12 +28,18 @@ function decrypt()
     const codeOber = codeAiai.replaceAll("ober", "o");
     const codeUfat = codeOber.replaceAll("ufat", "u");
 
-    output.value = codeUfat;
+    //output.value = codeUfat;
+    printOutput(codeUfat);
 }
 
 function copy()
 {
-    navigator.clipboard.writeText(output.value);
+    navigator.clipboard.writeText(output.innerText);
+}
+
+function printOutput(outputText)
+{
+    document.getElementById('output').innerText = outputText;
 }
 
 /*function showText()
