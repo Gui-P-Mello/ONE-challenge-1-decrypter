@@ -32,6 +32,24 @@ textarea
     font-size: 32px;
     line-height: 150%;
     color: #0A3871;
+    display: grid;
+    border-radius: 32px;
+    background-color: #FFFFFF;
+    width: 400px;
+    height: 900x;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+}
+
+#output
+{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#outputPlaceholder
+{
+    margin-top: 5%;
+    margin-bottom: 1%;
 }
 
 textarea
@@ -62,7 +80,12 @@ button
     line-height: 19px;
     flex: none;
     order: 0;
-    flex-grow: 0;    
+    flex-grow: 0;
+}
+
+button:hover
+{
+    opacity: 70%;
 }
 
 #encryptButton
@@ -79,6 +102,9 @@ button
 
 #copyButton
 {
+    margin: auto;
+    margin-bottom: 5%;
+    margin-top: 0;
     background-color: #FFFFFF;
     color: #0A3871;
 }
@@ -91,4 +117,14 @@ button
 #warningDiv
 {
     display: inline;
+}
+#warningText
+{
+    font-family: 'Inter';
+    font-style: normal;
+}
+
+footer
+{
+    background-color: black;
 }
