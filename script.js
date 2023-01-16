@@ -13,8 +13,7 @@ function encrypt()
     const codeA = codeI.replaceAll("a", "aiai");
     const codeO = codeA.replaceAll("o", "ober");
     const codeU = codeO.replaceAll("u", "ufat");
-        
-    //output.value = codeU;
+    
     printOutput(codeU);
 }
 
@@ -28,7 +27,6 @@ function decrypt()
     const codeOber = codeAiai.replaceAll("ober", "o");
     const codeUfat = codeOber.replaceAll("ufat", "u");
 
-    //output.value = codeUfat;
     printOutput(codeUfat);
 }
 
@@ -41,11 +39,6 @@ function printOutput(outputText)
 {
     document.getElementById('output').innerText = outputText;
 }
-
-/*function showText()
-    {
-        
-    }*/
 
 encryptButton.onclick = encrypt;
 decryptButton.onclick = decrypt;
